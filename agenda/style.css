@@ -1,0 +1,135 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: 'Fredoka One', cursive;
+  color: #474747;
+}
+
+body {
+  padding: 5rem 0;
+  background: linear-gradient(125deg, #fd4a1d 0%, #fcb045 100%);
+  min-height: 100vh;
+}
+
+body .container {
+  width: 540px;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(125deg, #5effc9 0%, #45c2fc 100%);
+  padding: 2rem 1rem;
+  border-radius: 35px;
+  -webkit-box-shadow: 0px 10px 30px 0px #3f3f3f;
+          box-shadow: 0px 10px 30px 0px #3f3f3f;
+}
+
+body h1 {
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  font-size: 2.35rem;
+  text-shadow: -1px 3px 2px #fd4a1d;
+}
+
+body form {
+  margin: 2rem 0;
+}
+
+body form input {
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 0 1rem;
+  border: 2px solid #fd4a1d;
+  font-size: 1.3rem;
+  background: linear-gradient(125deg, #fd4a1d 0%, #fcb045 100%);
+  color: #5effc9;
+  -webkit-box-shadow: 0px 2px 10px 0px #3f3f3f;
+          box-shadow: 0px 2px 10px 0px #3f3f3f;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+body form input::-webkit-input-placeholder {
+  color: #5effc9;
+}
+
+body form input:-ms-input-placeholder {
+  color: #5effc9;
+}
+
+body form input::-ms-input-placeholder {
+  color: #5effc9;
+}
+
+body form input::placeholder {
+  color: #5effc9;
+}
+
+body form input:focus {
+  border: 3px solid #ffee00;
+}
+
+body ul {
+  text-align: left;
+}
+
+body ul li {
+  list-style: none;
+  padding: .7rem;
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+body ul li:before {
+  content: '\0273D';
+  padding: .6rem;
+  font-size: 1.3rem;
+  color: #fd4a1d;
+}
+
+body ul li:after {
+  opacity: 0;
+}
+
+body ul li:hover:after {
+  content: " (terminé)";
+  opacity: 0;
+  font-size: 1.1rem;
+  color: #fd4a1d;
+  font-style: italic;
+  -webkit-animation: pseudoClassAnim 1s forwards;
+          animation: pseudoClassAnim 1s forwards;
+}
+
+body ul .checked:before {
+  content: "\2714";
+  padding: 10px 10px;
+  font-size: 1.1rem;
+  color: #fd4a1d;
+}
+
+body ul .checked:hover:after {
+  content: " (supprimer)";
+  font-size: 1.1rem;
+  color: #fd4a1d;
+  opacity: 0;
+}
+
+@-webkit-keyframes pseudoClassAnim {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pseudoClassAnim {
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
